@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="index.css" />
+        <link rel="stylesheet" href="/css/weather-icons.min.css" />
+        <title>Weather Forecast</title>
+    </head>
+    <body>
+        <main>
+            <h1>Weather Forecast</h1>
+
+            <div class="weather-forecast">
+                <div class="main-forecast">
+                    <div class="search">
+                        <input id="search-input" type="text" name="city" />
+                        <button id="search-button">Get Forecast</button>
+                    </div>
+                    <div id="searched-cities" class="searched-cities"></div>
+                    <div id="loading" class="loading hide">Loading...</div>
+                    <div id="forecast-fields" class="hide">
+                        <p id="main-date" class="date"></p>
+                        <i class="wi wi-night-sleet"></i>
+                        <div class="item">
+                            <p class="name">Temperature</p>
+                            <p id="main-temperature" class="value">0C</p>
+                        </div>
+                        <div class="item">
+                            <p class="name">Humidity</p>
+                            <p id="main-humidity" class="value">16C</p>
+                        </div>
+                        <div class="item">
+                            <p class="name">Wind Speed</p>
+                            <p id="wind-speed" class="value">16C</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="future-forecasts">
+                    <div id="day-1-forecast" class="future-forecast hide">
+                        <i class="wi wi-night-sleet"></i>
+                        <p id="day-1-date" class="date"></p>
+                        <div class="item">
+                            <p class="name">Temperature</p>
+                            <p id="day-1-temperature" class="value">0C</p>
+                        </div>
+                        <div class="item">
+                            <p class="name">Humidity</p>
+                            <p id="day-1-humidity" class="value">0 %</p>
+                        </div>
+                        <div class="item">
+                            <p class="name">Wind Speed</p>
+                            <p id="day-1-wind-speed" class="value">0 MPH</p>
+                        </div>
+                    </div>
+                    <div id="day-2-forecast" class="future-forecast hide">
+                        <i class="wi wi-night-sleet"></i>
+                        <p id="day-2-date" class="date"></p>
+                        <div class="item">
+                            <p class="name">Temperature</p>
+                            <p id="day-2-temperature" class="value">0C</p>
+                        </div>
+                        <div class="item">
+                            <p class="name">Humidity</p>
+                            <p id="day-2-humidity" class="value">0 %</p>
+                        </div>
+                        <div class="item">
+                            <p class="name">Wind Speed</p>
+                            <p id="day-2-wind-speed" class="value">0 MPH</p>
+                        </div>
+                    </div>
+                    <div id="day-3-forecast" class="future-forecast hide">
+                        <i class="wi wi-night-sleet"></i>
+                        <p id="day-3-date" class="date"></p>
+                        <div class="item">
+                            <p class="name">Temperature</p>
+                            <p id="day-3-temperature" class="value">0C</p>
+                        </div>
+                        <div class="item">
+                            <p class="name">Humidity</p>
+                            <p id="day-3-humidity" class="value">0 %</p>
+                        </div>
+                        <div class="item">
+                            <p class="name">Wind Speed</p>
+                            <p id="day-3-wind-speed" class="value">0 MPH</p>
+                        </div>
+                    </div>
+                    <div id="day-4-forecast" class="future-forecast hide">
+                        <i class="wi wi-night-sleet"></i>
+                        <p id="day-4-date" class="date"></p>
+                        <div class="item">
+                            <p class="name">Temperature</p>
+                            <p id="day-4-temperature" class="value">0C</p>
+                        </div>
+                        <div class="item">
+                            <p class="name">Humidity</p>
+                            <p id="day-4-humidity" class="value">0 %</p>
+                        </div>
+                        <div class="item">
+                            <p class="name">Wind Speed</p>
+                            <p id="day-4-wind-speed" class="value">0 MPH</p>
+                        </div>
+                    </div>
+                    <div id="day-5-forecast" class="future-forecast hide">
+                        <i class="wi wi-night-sleet"></i>
+                        <p id="day-5-date" class="date"></p>
+                        <div class="item">
+                            <p class="name">Temperature</p>
+                            <p id="day-5-temperature" class="value">0C</p>
+                        </div>
+                        <div class="item">
+                            <p class="name">Humidity</p>
+                            <p id="day-5-humidity" class="value">0 %</p>
+                        </div>
+                        <div class="item">
+                            <p class="name">Wind Speed</p>
+                            <p id="day-5-wind-speed" class="value">0 MPH</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
